@@ -3,48 +3,494 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wael Nour Alden</title>
+<title>WAEL NOUR ALDEN | Official Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-text-align:center;
-padding-top:100px;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
-h1{
-font-size:60px;
+body{
+background:#070b14;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#00c3ff;
+filter:blur(200px);
+top:-150px;
+left:-150px;
+opacity:.15;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#0066ff;
+filter:blur(200px);
+bottom:-150px;
+right:-150px;
+opacity:.15;
+z-index:-1;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#00d9ff;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.4s;
+}
+
+nav ul li a:hover{
 color:#00d9ff;
 }
 
-p{
-font-size:22px;
-color:#ccc;
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 10%;
+gap:80px;
+flex-wrap:wrap;
 }
 
-button{
-padding:15px 30px;
-font-size:20px;
-background:#00d9ff;
-border:none;
-border-radius:30px;
-cursor:pointer;
+.hero-image img{
+width:350px;
+height:350px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00d9ff;
+box-shadow:0 0 50px #00d9ff;
 }
+
+.hero-text{
+max-width:650px;
+}
+
+.hero-text h1{
+font-size:70px;
+line-height:1.1;
+color:#00d9ff;
+}
+
+.hero-text h3{
+margin-top:20px;
+font-weight:400;
+font-size:25px;
+color:#d6d6d6;
+}
+
+.hero-text p{
+margin-top:25px;
+font-size:18px;
+line-height:1.8;
+color:#b9c0cb;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 40px;
+background:#00d9ff;
+color:black;
+text-decoration:none;
+font-weight:700;
+border-radius:40px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px #00d9ff;
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:50px;
+margin-bottom:60px;
+color:#00d9ff;
+}
+
+.about{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+padding:40px;
+border-radius:30px;
+line-height:2;
+font-size:18px;
+color:#d6d6d6;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.04);
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,217,255,.2);
+}
+
+.card h2{
+margin-bottom:20px;
+color:#00d9ff;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-image img{
+width:250px;
+height:250px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
 </style>
 </head>
+
 <body>
+
+<nav>
+
+<div class="logo">
+WAEL
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#work">Work</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-image">
+
+<!-- ضع صورتك هنا -->
+<img src="profile.jpg">
+
+</div>
+
+<div class="hero-text">
 
 <h1>WAEL NOUR ALDEN</h1>
 
+<h3>
+Digital Creator • Developer • AI Enthusiast
+<br>
+مطور ومبدع رقمي • شغوف بالتكنولوجيا والذكاء الاصطناعي
+</h3>
+
 <p>
-Official Website
+
+I'm Wael Nour Alden, a Dental Medicine student with a strong passion for technology, programming and artificial intelligence.
+
+أنا وائل نور الدين، أدرس طب الأسنان ولكن شغفي الحقيقي هو التكنولوجيا والبرمجة والذكاء الاصطناعي.
+
 </p>
 
-<button>
+<a href="#about" class="btn">
 Explore
-</button>
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h1 class="title">
+About Me | من أنا
+</h1>
+
+<div class="about">
+
+I'm Wael Nour Alden, a Dental Medicine student with a strong passion for technology, programming, and artificial intelligence. Although I study Dentistry, my true hobby and inspiration come from exploring modern technologies and creating innovative digital experiences.
+
+<br><br>أنا وائل نور الدين، أدرس طب الأسنان، ولكن شغفي الحقيقي يكمن في التكنولوجيا والبرمجة والذكاء الاصطناعي. وعلى الرغم من دراستي لطب الأسنان، فإن هوايتي وحبي للتقنيات الحديثة يدفعاني دائمًا إلى التعلم المستمر وصناعة تجارب رقمية مبتكرة.
+
+</div>
+<section id="skills">
+
+<h1 class="title">
+Skills | المهارات
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Web Development</h2>
+<p>
+HTML, CSS, JavaScript and modern website creation.
+</p>
+</div>
+
+<div class="card">
+<h2>Artificial Intelligence</h2>
+<p>
+Passionate about AI tools and emerging technologies.
+</p>
+</div>
+
+<div class="card">
+<h2>Problem Solving</h2>
+<p>
+Continuous learning and building innovative solutions.
+</p>
+</div>
+
+<div class="card">
+<h2>Dentistry Student</h2>
+<p>
+Studying Dental Medicine while pursuing my passion for technology.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="work">
+
+<h1 class="title">
+My Work | أعمالي
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Web Projects</h2>
+<p>
+Professional websites and responsive designs.
+</p>
+</div>
+
+<div class="card">
+<h2>AI Projects</h2>
+<p>
+Artificial intelligence and digital solutions.
+</p>
+</div>
+
+<div class="card">
+<h2>Content Creation</h2>
+<p>
+Creative and modern digital experiences.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h1 class="title">
+Gallery | معرض الصور
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Personal Photos</h2>
+<p>
+Add your images here later.
+</p>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<p>
+Show your work and achievements.
+</p>
+</div>
+
+<div class="card">
+<h2>Portfolio</h2>
+<p>
+Create your own professional gallery.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h1 class="title">
+Services | الخدمات
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Website Design</h2>
+<p>
+Modern and elegant websites.
+</p>
+</div>
+
+<div class="card">
+<h2>AI Solutions</h2>
+<p>
+Smart digital technologies.
+</p>
+</div>
+
+<div class="card">
+<h2>Digital Branding</h2>
+<p>
+Building a professional identity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h1 class="title">
+Contact Me | تواصل معي
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Instagram</h2>
+<p>
+@wael.nouralden
+</p>
+<a class="btn"
+href="https://www.instagram.com/wael.nouralden?igsh=c25pM2lkb2kyMHBl">
+Open Instagram
+</a>
+</div>
+
+<div class="card">
+<h2>Facebook</h2>
+<p>
+Wael Nour Alden
+</p>
+<a class="btn"
+href="https://www.facebook.com/share/1G7xiZUmLD/">
+Open Facebook
+</a>
+</div>
+
+<div class="card">
+<h2>WhatsApp</h2>
+<p>
+01061892144
+<br>
+01551321767
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer
+style="
+padding:40px;
+text-align:center;
+background:#050914;
+border-top:1px solid rgba(255,255,255,.08);
+color:#9ca3af;
+">
+
+<h2 style="color:#00d9ff;">
+WAEL NOUR ALDEN
+</h2>
+
+<br>
+
+Digital Creator • Developer • AI Enthusiast
+
+<br><br>
+
+© 2026 All Rights Reserved
+
+</footer>
 
 </body>
 </html>
+</section>
